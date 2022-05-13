@@ -1,0 +1,75 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="{% static 'css/css1.css' %}">
+<style>
+body {
+  background-image: url("https://st3.depositphotos.com/1103339/13209/v/1600/depositphotos_132095056-stock-illustration-abstract-seamless-pattern-in-postmodern.jpg");
+  background: rgb(195, 195, 204);
+  
+}
+</style>
+</head>
+<body>
+ 
+ <div id="container_1">
+   <form method ='post'>
+     {% csrf_token %}
+    <h1 id="title">
+    Hospital Registration
+  </h1><!--title-->
+  <p id="description">
+    Enter the required data in the boxes.
+  </p><!--description--->
+    
+  </div><!---container_1--->
+  <div id="container_2">
+    
+      <label id="name-label">Frist Name</label>
+        <input type="text" id="name" name="name" class="form" required placeholder="Insert your frist name"><br><!--name--->
+      <label id="name-label">Last Name</label>
+        <input type="text" id="name" name="name" class="form" required placeholder="Insert your last name"><br><!--name--->
+      <label id="name-label">User Name</label>
+        <input type="text" id="user" name="user" class="form" required placeholder="Insert your User name"><br><!--name--->
+      <label id="email-label">Email</label>
+        <input type="email" id="email" name="email" class="form" required placeholder="Insert your email"><br><!---email-->
+      <label id="name-label">Phone number</label>
+        <input type="text" id="user" name="phone" class="form" required placeholder="Insert your Phone number"><br><!--name--->
+      <label id="name-label">Password</label>
+        <input type="password" id="password" name="password" class="form" required placeholder="Insert your Password"><br><!--name--->
+        
+      <label id="name-label">Confirm Password</label>
+        <input type="password" id="confirm" name="confirm" class="form" required placeholder="Please Confirm your Passwordt"><br><!--name--->
+      <label id="name-label">Address</label>
+        <input type="text" id="Address" name="Address" class="form" required placeholder="Insert your Address"><br><!--name--->
+      <label id="image-lable">Image</label>
+        <input type="file" id ="image" name="image" class="form" required placeholder=" choose your profile pic"></br>
+            
+          
+        
+      <p>Gender</p>
+      <label>
+        <input type="radio" name="genre" value="Male">Male
+      </label>
+      <label>
+        <input type="radio" name="genre" value="Female">Female
+      </label>
+      <label>
+        <input type="radio" name="genre" value="Other">I prefer not to answer
+      </label><!---radioButtons--->
+      <p>What is your preferred Login or Singup?</p>
+      <label>
+        <input type="radio" name="mode" value="Doctor">Doctor
+        
+      </label>
+      <label>
+        <input type="radio" name="mode" value="Patient">Patient
+      </label>
+      
+      
+      
+      <input type="submit" id="submit" name="submit" value="Singup">
+    </form><!---survey-form--->
+  </div><!--container_2--->
+</form>
