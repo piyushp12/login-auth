@@ -1,5 +1,6 @@
 from atexit import register
 from django.contrib import admin
-from .models import Index
+from base.models import *
 # Register your models here.
-admin.site.register(Index)
+admin.site.register(Signup)
+admin.site.register(MyUser)
